@@ -38,6 +38,8 @@ try:
     growl2    = pygame.mixer.Sound(os.path.join('sounds', 'growl-2.ogg'))
     growl3    = pygame.mixer.Sound(os.path.join('sounds', 'growl-3.ogg'))
     growl4    = pygame.mixer.Sound(os.path.join('sounds', 'growl-4.ogg'))
+    growl5    = pygame.mixer.Sound(os.path.join('sounds', 'growl-5.ogg'))
+    growl6    = pygame.mixer.Sound(os.path.join('sounds', 'growl-6.ogg'))
     heartbeat = pygame.mixer.Sound(os.path.join('sounds', 'heartbeat.ogg'))
     heartbeat.set_volume(1)
     laugh     = pygame.mixer.Sound(os.path.join('sounds', 'evil-laugh.ogg'))
@@ -124,17 +126,15 @@ while running:
 					screen.blit(enemy_bite, (enemy_posx * TILESIZE, enemy_posy * TILESIZE))
 					pygame.display.update()
 
-					growl = randint(1,4)
-					if growl == 1:
-						sound_playing = growl1.play()
-					elif growl == 2:
-						sound_playing = growl2.play()
-					elif growl == 3:
-						sound_playing = growl3.play()
-					else:
-						sound_playing = growl4.play()
+					rand = randint(1,6)
+					if   rand == 1: growl = growl1.play()
+					elif rand == 2: growl = growl2.play()
+					elif rand == 3: growl = growl3.play()
+					elif rand == 4: growl = growl4.play()
+					elif rand == 5: growl = growl5.play()
+					else:           growl = growl6.play()
 
-					while sound_playing.get_busy():
+					while growl.get_busy():
 						pygame.time.wait(FPS)
 
 					screen.blit(enemy, (enemy_posx * TILESIZE, enemy_posy * TILESIZE))

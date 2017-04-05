@@ -69,7 +69,7 @@ player = pygame.image.load(os.path.join('sprites', 'virus.png'))
 player = player.convert_alpha()
 
 enemy_posx = WIDTH - 1
-enemy_posy = HEIGHT -1
+enemy_posy = HEIGHT - 1
 enemy_facing = 'left'
 enemy = pygame.image.load(os.path.join('sprites', 'antivirus.png'))
 enemy = enemy.convert_alpha()
@@ -84,11 +84,11 @@ playtime = 0.0
 running = True
 
 
-sound_playing = laugh.play()
-while sound_playing.get_busy():
-	pygame.time.wait(FPS)
-pygame.mixer.music.set_volume(0.25)
-pygame.mixer.music.play(-1)
+#sound_playing = laugh.play()
+#while sound_playing.get_busy():
+#	pygame.time.wait(FPS)
+#pygame.mixer.music.set_volume(0.25)
+#pygame.mixer.music.play(-1)
 
 while running:
 	screen.blit(background, (0,0))

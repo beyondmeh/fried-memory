@@ -6,6 +6,12 @@
 # http://usingpython.com/pygame-tilemaps/
 # http://colorpalettes.net/category/pastel-color/
 
+# TODO - game over / low health
+# TODO - level complete / door exit
+# TODO - power-ups / increase health
+# TODO - levels
+# TODO - change erased percent to true percent 
+
 import pygame, os, math
 from random import randint
 

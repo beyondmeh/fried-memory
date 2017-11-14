@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fried Memory</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="paused" class="overlay-box text-center">
+            <h2>GAME PAUSED!</h2>
+            <p>Press <em>&lt; P &gt;</em> to resume...</p>
+        </div>
+        <div id="start-game" class="overlay-box text-center">
+            <h2>NEW GAME</h2>
+            <p>Press <em>&lt; enter &gt;</em> to start playing...</p>
+        </div>
+
+        <div class="jumbotron">
+            <div id="game-container vertical-center">
+                <div id="playfield" class=""></div>
+            </div>
+        </div>
+
+        <div class="fixed-bottom">
+            <span class="float-left">
+                <span class="col-md-1 text-right font-weight-bold">Score: </span>
+                <span class="score col-md-2 text-left"></span>
+            </span>
+            <span class="float-right">
+                <span class="col-md-1 text-right font-weight-bold">Health: </span>
+                <span class="hearts col-md-2 text-left"></span>
+            </span>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/game.js"></script>
+
+    </body>
+</html>

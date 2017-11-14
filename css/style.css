@@ -1,0 +1,177 @@
+body {
+    background-color: #EEE;
+    color: #444;
+}
+
+.em {
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+}
+
+.sprite {
+    width: 30px;
+    height: 30px;
+}
+
+.em-player {
+    background-image: url('../img/virus.png');
+}
+
+.em-enemy {
+    background-image: url('../img/antivirus.png');
+}
+
+.em-heart {
+    background-image: url('../img/heart.png');
+}
+
+.em-heart-gift {
+    background-image: url('../img/heart-gift.png');
+}
+
+.em-door-open {
+    background-image: url('../img/door.png');
+    background-color: #EEE;
+    border: 1px solid #FFF;
+    animation-name: pulsate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+.em-door-closed {
+    background-image: url('../img/door-fire.png');
+}
+
+.em-hurt {
+    background-image: url('../img/punch.png');
+    background-color: #d64d4d;
+    animation-duration: .5s;
+    animation-name: pulsate;
+}
+
+
+@keyframes pulsate { /* .em-door-open & .em-hurt */
+	0%   { opacity:  .25; }
+	25%  { opacity: .5; }
+	40%  { opacity: 1; }
+	50%  { opacity: 1; }
+	60%  { opacity: 1; }
+	75%  { opacity: .5; }
+	100% { opacity:  .25; }
+}
+
+
+
+#playfield {
+    z-index: 50;
+    display: table;
+    border: 1px solid #4492b2;
+    margin: 0 auto;
+}
+
+.cell {
+    display: table-cell;
+    width: 32px;
+    height: 32px;
+
+    font-size: 4px;
+    text-align: center;
+}
+
+.game-row {
+    display: table-row;
+}
+
+
+
+.overlay {
+    opacity:0.25;
+}
+
+.overlay-box {
+    display: none;
+
+    z-index: 100;
+    position: absolute;
+
+    left:50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    padding: 2em 6em;
+    
+	background: #709ed6;
+    border: 2px solid #3876c2;
+    border-radius: 1em;
+}
+
+
+
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+
+
+/*
+.danger {
+    background-color: #d64d4d;
+    animation-name: danger-animate;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+@keyframes danger-animate {
+    0%   { background-color: rgba(214,77,77,0.1); }
+    10%  { background-color: rgba(214,77,77,0.2); }
+    20%  { background-color: rgba(214,77,77,0.4); }
+    30%  { background-color: rgba(214,77,77,0.6); }
+    40%  { background-color: rgba(214,77,77,0.8); }
+    50%  { background-color: rgba(214,77,77,1.0); }
+    60%  { background-color: rgba(214,77,77,0.8); }
+    70%  { background-color: rgba(214,77,77,0.6); }
+    80%  { background-color: rgba(214,77,77,0.4); }
+    90%  { background-color: rgba(214,77,77,0.2); }
+    100% { background-color: rgba(214,77,77,0.1); }
+}
+*/
+
+.empty {
+    background-color: #9ed670;
+    border: 1px solid #4f6b38;
+}
+
+.firstpass {
+    background-color: #e8d174;
+    border: 1px solid #74683a;
+}
+
+.secondpass {
+    background-color: #e39e54;
+    border: 1px solid #714f2a;
+}
+
+.thirdpass {
+    background-color: #d64d4d;
+    border: 1px solid #6b2626;
+}
+
+.disabled {
+    background-color: #401717;
+    border: 1px solid #2a0f0f;
+}
+
+/*
+.disabled {
+    background-color: #2a0f0f;
+    border: 1px solid #150707;
+}
+*/

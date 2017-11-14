@@ -38,6 +38,3 @@ Sorted alphabetically:
 
 * **[Witeg](https://en.wikipedia.org/wiki/User:Witeg)** / **[.Koen](https://meta.wikimedia.org/wiki/User:.Koen)**
   * [Evillaugh.ogg](https://en.wikipedia.org/wiki/File:Evillaugh.ogg) - [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
-
-* **[ZiNGOT](https://opengameart.org/users/zingot)**
-  * [Bitmap Font Pack](https://opengameart.org/content/bitmap-font-pack) - [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
